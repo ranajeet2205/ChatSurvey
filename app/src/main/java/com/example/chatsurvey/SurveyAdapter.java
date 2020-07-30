@@ -18,7 +18,7 @@ public class SurveyAdapter extends RecyclerView.Adapter<SurveyAdapter.SurveyView
     private List<SurveyModel> surveyModelList;
     private OptionsAdapter optionsAdapter;
     private Context context;
-    private int holderPosition;
+
 
     public SurveyAdapter(List<SurveyModel> surveyModelList,Context context) {
         this.surveyModelList = surveyModelList;
@@ -56,7 +56,7 @@ public class SurveyAdapter extends RecyclerView.Adapter<SurveyAdapter.SurveyView
         //LinearLayoutManager layoutManager = new LinearLayoutManager(context);
         holder.optionsRecyclerView.setLayoutManager(layoutManager);
         holder.optionsRecyclerView.setAdapter(optionsAdapter);
-        holderPosition = position;
+
     }
 
     @Override
